@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: kafka-producer
+  datasource:
+    url: jdbc:postgresql://localhost:5432/base_kafka?createDatabaseIfNotExist=true&useSSL=false
+    username: guiborges
+    password: root
+  jpa:
+    show-sql: true
+    database: POSTGRESQL
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+
