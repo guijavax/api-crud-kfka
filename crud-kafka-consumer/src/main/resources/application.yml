@@ -1,12 +1,12 @@
 spring:
   application:
-    name: kafka-producer
-  datasource:
-    url: jdbc:postgresql://localhost:5432/base_kafka?createDatabaseIfNotExist=true&useSSL=false
-    username: guiborges
-    password: root
-  jpa:
-    show-sql: true
+    name: kafka-consumer
+  data:
+    cassandra:
+      contact-points: localhost
+      keyspace-name: vendas
+      port: 9042
+      schema-action: create_if_not_exists
 server:
   port: 9001
   kafka:
